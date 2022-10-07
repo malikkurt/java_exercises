@@ -3,6 +3,9 @@ public class Main {
 
         Products Laptop = new Products();
 
-        Laptop.screenprnt("Huawei",1,"Black");
+        Laptop.screenprnt("Fresh",1,"Black");
+        Laptop.setId(3);
+        System.out.println(Laptop.getId());
+
     }
 }
