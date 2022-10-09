@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        Products Laptop = new Products();
+        TarimKrediManager ciftci = new TarimKrediManager();
+        System.out.println(ciftci.hesapla(1000));
 
-        Laptop.screenprnt("Fresh",1,"Black");
-        Laptop.setId(3);
-        System.out.println(Laptop.getId());
 
     }
 }
