@@ -1,8 +1,23 @@
+import java.io.File;
+import java.io.IOException;
+
 public class Main {
     public static void main(String[] args) {
 
-        TarimKrediManager ciftci = new TarimKrediManager();
-        System.out.println(ciftci.hesapla(1000));
+
+        try{
+            File myFile = new File("javatext.txt");
+            if(myFile.createNewFile()){
+                System.out.println("File Created");
+            }
+            else {
+                System.out.println("File Already Exists");
+            }
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
 
 
     }
